@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Global Travel Assist</title>
+    <!-- Load Tailwind CSS for utility-first styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a modern, legible look across devices */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* A very light gray background for softness */
+            color: #1e293b; /* Dark slate color for primary text, ensuring good good contrast */
+        }
+        /* Custom styles for accessibility and visual feedback on interactive elements */
+        .focus-ring {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.45); /* Tailwind emerald-500 with a subtle opacity for a fresh feel */
+        }
+        /* Smooth transitions for hover effects and general interactivity */
+        .transition-ease {
+            transition: all 0.3s ease-in-out;
+        }
+        /* Keyframe animation for a subtle bounce effect on button hover */
+        @keyframes buttonHover {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+            100% { transform: translateY(0); }
+        }
+        .animate-button-hover:hover {
+            animation: buttonHover 0.3s ease-in-out;
+        }
+        /* Consistent padding for main content sections */
+        .section-padding {
+            padding-top: 5rem; /* Equivalent to Tailwind's py-20 */
+            padding-bottom: 5rem; /* Equivalent to Tailwind's py-20 */
+            padding-left: 1rem; /* Equivalent to Tailwind's px-4 */
+            padding-right: 1rem; /* Equivalent to Tailwind's px-4 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header/Navigation Bar: Sticky to remain visible on scroll -->
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Site Logo/Name -->
+            <a href="index.html" class="text-2xl font-bold text-emerald-600 rounded-lg p-2 hover:bg-emerald-50 transition-ease">Global Travel Assist</a>
+            <!-- Navigation Links -->
+            <nav>
+                <ul class="flex space-x-4 md:space-x-6 text-sm md:text-base">
+                    <li><a href="index.html#services" class="text-gray-700 hover:text-emerald-600 font-medium transition-ease rounded-lg p-2 hover:bg-gray-50">Services</a></li>
+                    <li><a href="index.html#destinations" class="text-gray-700 hover:text-emerald-600 font-medium transition-ease rounded-lg p-2 hover:bg-gray-50">Destinations</a></li>
+                    <li><a href="about.html" class="text-gray-700 hover:text-emerald-600 font-medium transition-ease rounded-lg p-2 hover:bg-gray-50">About Us</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-emerald-600 font-medium transition-ease rounded-lg p-2 hover:bg-gray-50">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Us Section: Transparency about the travel assistance provider -->
+    <section class="section-padding bg-white rounded-xl shadow-md mx-auto my-12 max-w-6xl">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-emerald-700 mb-12">About Global Travel Assist: Your Journey, Our Priority</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+                <div class="text-left">
+                    <p class="text-gray-700 text-lg mb-6">
+                        At Global Travel Assist, we believe every journey should be as smooth and enjoyable as possible. Our mission is to provide comprehensive, reliable travel assistance that puts your safety, comfort, and peace of mind first. With a global network of dedicated professionals and cutting-edge resources, we are equipped to handle everything from meticulous itinerary planning to unforeseen emergencies anywhere in the world.
+                    </p>
+                    <p class="text-gray-700 text-lg">
+                        Our experienced team of travel advisors and support specialists are passionate about travel and committed to delivering exceptional service. We understand the nuances of international travel and are here to offer expert guidance, quick solutions, and unwavering support, so you can focus on creating unforgettable memories.
+                    </p>
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://placehold.co/400x250/059669/ffffff?text=Travel+Assistance" onerror="this.onerror=null;this.src='https://placehold.co/400x250/e0e0e0/333333?text=About+Us+Image';" alt="Image of a globe with travel icons, representing global travel assistance" class="rounded-xl shadow-lg w-full max-w-md object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer: Contains copyright and legal links -->
+    <footer class="bg-gray-800 text-white py-10 px-4 mt-12 rounded-t-xl shadow-lg">
+        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
+            <p class="text-sm mb-4 md:mb-0">&copy; 2025 Global Travel Assist. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 md:space-x-6 text-sm">
+                <!-- Legal & Info Links -->
+                <a href="privacy.html" class="text-gray-300 hover:text-white transition-ease">Privacy Policy</a>
+                <a href="cookie.html" class="text-gray-300 hover:text-white transition-ease">Cookie Policy</a>
+                <a href="terms.html" class="text-gray-300 hover:text-white transition-ease">Terms & Conditions</a>
+                <a href="about.html" class="text-gray-300 hover:text-white transition-ease">About Us</a>
+                <a href="contact.html" class="text-gray-300 hover:text-white transition-ease">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
